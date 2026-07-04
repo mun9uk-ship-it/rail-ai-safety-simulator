@@ -61,6 +61,10 @@ cd rail-ai-safety-simulator</code></pre>
   <pre><code>streamlit run v01.py</code></pre>
   <p>Once the local server initializes, a browser tab will automatically open at <code>http://localhost:8501</code>.</p>
 
+  <h3>OR</h3>
+  <a href="https://mun9uk-ship-it-rail-ai-safety-simulator-v01-yj0ycc.streamlit.app/"><b> click to run it DIRECT in your browser </b></a>
+
+
   <h3>💡 How to Use the Simulation</h3>
   <ol>
     <li>Click <b>▶️ Run Normal Simulation</b> to see the trains operate safely under standard baseline parameters.</li>
