@@ -47,14 +47,7 @@ cd rail-ai-safety-simulator</code></pre>
   <p>Install the necessary dependencies using pip:</p>
   <pre><code>pip install streamlit pandas numpy scikit-learn</code></pre>
 
-  <blockquote>
-    <b>Note:</b> If you plan on deploying directly to Streamlit Community Cloud, make sure to include a <code>requirements.txt</code> file in your root folder containing:
-    <br />
-    <code>streamlit</code><br />
-    <code>pandas</code><br />
-    <code>numpy</code><br />
-    <code>scikit-learn</code>
-  </blockquote>
+
 
   <h3>🚀 How to Run</h3>
   <p>Launch the application using Streamlit from your terminal by targeting your entry point script:</p>
@@ -114,14 +107,7 @@ cd rail-ai-safety-simulator</code></pre>
   <p>قم بتثبيت الحزم اللازمة باستخدام pip:</p>
   <pre><code>pip install streamlit pandas numpy scikit-learn</code></pre>
 
-  <blockquote>
-    <b>ملاحظة:</b> إذا كنت تخطط لرفع المشروع مباشرة على سحابة Streamlit Cloud، تأكد من تضمين ملف <code>requirements.txt</code> في المجلد الرئيسي يحتوي على المكتبات التالية:
-    <br />
-    <code>streamlit</code><br />
-    <code>pandas</code><br />
-    <code>numpy</code><br />
-    <code>scikit-learn</code>
-  </blockquote>
+
 
   <h3>🚀 كيفية التشغيل</h3>
   <p>قم بتشغيل التطبيق عبر الطرفية (Terminal) بتوجيه الأمر نحو ملف التشغيل:</p>
