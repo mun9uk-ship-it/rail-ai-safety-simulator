@@ -1,123 +1,130 @@
-<!-- Tab Navigation Headers -->
-<div align="center">
-  <h1>🚆 Enhancing Digital Signaling Safety / تحسين أمان الإشارات الرقمية</h1>
-  <p>Select your preferred language below / اختر اللغة المفضلة أدناه:</p>
-  <a href="#english-version"><b>🇬🇧 English Documentation</b></a> | 
-  <a href="#arabic-version"><b>🇸🇦 الوثائق باللغة العربية</b></a>
-</div>
+<h1 align="center">🚆 Rail AI Safety Simulator</h1>
+<h3 align="center">Enhancing Digital Signaling Safety: AI-Based Derailment & Collision Avoidance</h3>
+<h3 align="center" dir="rtl">تحسين أمان الإشارات الرقمية: محاكي استباق الانحراف ومنع التصادم بالذكاء الاصطناعي</h3>
 
-<hr />
+<p align="center">
+  <img src="https://img.shields.io/badge/-Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+  <img src="https://img.shields.io/badge/Framework-Streamlit-FF4B4B.svg?style=for-the-badge">
+  <img src="https://img.shields.io/badge/ML%20Library-Scikit--Learn-F79E1E.svg?style=for-the-badge">
+</p>
 
-<!-- ========================================== -->
-<!--             ENGLISH VERSION                -->
-<!-- ========================================== -->
-<div id="english-version">
-  <h2 align="center">🇬🇧 Project Documentation (English)</h2>
-  
-  <p align="center">
-    <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python Version">
-    <img src="https://img.shields.io/badge/Framework-Streamlit-FF4B4B.svg" alt="Streamlit">
-    <img src="https://img.shields.io/badge/ML%20Library-Scikit--Learn-F7931E.svg" alt="Scikit-Learn">
-  </p>
+<hr>
 
-  <h3>📖 Project Overview</h3>
-  <p>
-    This repository contains an AI-powered simulation framework built to address digital railway signaling and safety. By analyzing real-time virtual sensor telemetry (such as structural track vibrations), the system uses an <b>Isolation Forest anomaly detection model</b> to predict potential derailment events or track faults immediately. 
-  </p>
-  <p>
-    When a critical risk is flagged, the application instantly calculates emergency braking physics—accounting for reaction delay, required stopping distance, and deceleration rates—to automatically trigger a fail-safe interlocking action that stops trailing trains and prevents catastrophic collisions.
-  </p>
+<h2>📸 Live Demo</h2>
 
-  <h3>⚙️ Core Features</h3>
-  <ul>
-    <li><b>AI Anomaly Detection:</b> Machine learning engine trained to spot abnormal track vibration signatures (G-force anomalies).</li>
-    <li><b>Physics-Based Fail-Safe Calculations:</b> Real-time processing of deceleration, braking window, and total stopping time.</li>
-    <li><b>Bilingual UI Dashboard:</b> Full native English and Arabic descriptions and metric readouts.</li>
-    <li><b>Live Interactive Telemetry:</b> Dynamic real-time graphing, block signaling updates, and status tracking.</li>
-  </ul>
+<p align="center">
+  <img src="rail-ai-safety-simulator.png" alt="Rail AI Safety Simulator dashboard showing live telemetry, signal status, and emergency braking analysis" width="850">
+</p>
 
-  <h3>🛠️ Installation & Requirements</h3>
-  <p>To run this simulation locally, you will need <b>Python 3.9 or higher</b> installed on your system.</p>
+<p align="center">
+  🔗 <a href="https://mun9uk-ship-it-rail-ai-safety-simulator-v01-yj0ycc.streamlit.app/"><b>Launch the live simulator in your browser</b></a>
+</p>
 
-  <h4>1. Clone the Repository</h4>
-  <pre><code>git clone https://github.com/YOUR_USERNAME/rail-ai-safety-simulator.git
-cd rail-ai-safety-simulator</code></pre>
+<hr>
 
-  <h4>2. Install Required Libraries</h4>
-  <p>Install the necessary dependencies using pip:</p>
-  <pre><code>pip install streamlit pandas numpy scikit-learn</code></pre>
+<h2>📖 Project Overview</h2>
 
+<p>
+This project is an AI-powered simulation built to explore digital railway
+signaling and safety. It analyses simulated real-time sensor telemetry
+(track vibration) using an <b>Isolation Forest anomaly detection model</b>
+to flag potential derailment events or track faults.
+</p>
 
+<p>
+When a critical anomaly is flagged, the app calculates emergency braking
+physics — reaction time, required stopping distance, and deceleration —
+and automatically triggers a fail-safe braking action to stop the trailing
+train and prevent a collision.
+</p>
 
-  <h3>🚀 How to Run</h3>
-  <p>Launch the application using Streamlit from your terminal by targeting your entry point script:</p>
-  <pre><code>streamlit run v01.py</code></pre>
-  <p>Once the local server initializes, a browser tab will automatically open at <code>http://localhost:8501</code>.</p>
+<h2 dir="rtl">📖 نبذة عن المشروع</h2>
 
-  <h3>OR</h3>
-  <a href="https://mun9uk-ship-it-rail-ai-safety-simulator-v01-yj0ycc.streamlit.app/"><b> click to run it DIRECT in your browser </b></a>
+<p dir="rtl">
+هذا المشروع عبارة عن محاكاة مدعومة بالذكاء الاصطناعي لاستكشاف أمان
+الإشارات الرقمية في السكك الحديدية. يحلل بيانات اهتزاز افتراضية للمسار
+باستخدام <b>نموذج Isolation Forest لكشف الشذوذ</b> للتنبؤ بحالات
+انحراف محتملة أو أعطال في المسار.
+</p>
 
+<p dir="rtl">
+عند رصد خطر حرج، يحسب النظام فوراً معادلات الكبح الطارئ — زمن
+الاستجابة، مسافة التوقف اللازمة، ومعدل التباطؤ — ويفعّل تلقائياً
+إجراء فرملة آمن لإيقاف القطار الخلفي ومنع التصادم.
+</p>
 
-  <h3>💡 How to Use the Simulation</h3>
-  <ol>
-    <li>Click <b>▶️ Run Normal Simulation</b> to see the trains operate safely under standard baseline parameters.</li>
-    <li>Click <b>⚠️ Simulate Track Fault (Watford)</b> to introduce high G-force anomalies on the track layout. Watch how the AI flags the danger and triggers automated defensive braking.</li>
-    <li>Click <b>🔄 Reset System</b> to clear current execution history and return to default positions.</li>
-  </ol>
-</div>
+<hr>
 
-<hr />
+<h2>⚙️ Core Features</h2>
 
-<!-- ========================================== -->
-<!--             ARABIC VERSION                 -->
-<!-- ========================================== -->
-<div id="arabic-version" dir="rtl">
-  <h2 align="center">🇸🇦 توثيق المشروع (باللغة العربية)</h2>
-  
-  <p align="center">
-    <img src="https://img.shields.io/badge/لغة_البرمجة-Python_3.9+-blue.svg" alt="نسخة بايثون">
-    <img src="https://img.shields.io/badge/إطار_العمل-Streamlit-FF4B4B.svg" alt="ستريمليت">
-    <img src="https://img.shields.io/badge/مكتبة_الذكاء_الاصطناعي-Scikit--Learn-F7931E.svg" alt="سايكيت ليرن">
-  </p>
+<ul>
+  <li><b>AI Anomaly Detection:</b> Isolation Forest model trained to spot abnormal track vibration readings</li>
+  <li><b>Physics-Based Braking Calculations:</b> Real-time deceleration, braking distance, and total stopping time</li>
+  <li><b>Bilingual Dashboard:</b> Full English and Arabic labels throughout the UI</li>
+  <li><b>Live Interactive Telemetry:</b> Real-time line charts of vibration and train speed</li>
+</ul>
 
-  <h3>📖 نبذة عن المشروع</h3>
-  <p>
-    يحتوي هذا المستودع على بيئة محاكاة برمجية مدعومة بالذكاء الاصطناعي تم تطويرها لتعزيز أمان الإشارات الرقمية في السكك الحديدية من خلال تحليل قياسات مستشعرات الاهتزاز الفورية للهيكل السفلي للمسار، يعتمد النظام على <b>نموذج Isolation Forest لرصد البيانات الشاذة</b>  للتنبؤ بحالات انحراف القطارات أو عيوب السكك الحديدية بشكل فوري.
-  </p>
-  <p>
-    عند اكتشاف خطر حرج، يقوم التطبيق فوراً بحساب المعادلات الفيزيائية لكبح الطوارئ — مع الأخذ في الاعتبار زمن استجابة النظام الفني، ومسافة الكبح المطلوبة، ومعدلات التباطؤ  — لتفعيل نظام الارتباط الآمن آلياً وتأمين القطارات الخلفية لمنع وقوع حوادث التصادم .
-  </p>
+<hr>
 
-  <h3>⚙️ الميزات الأساسية</h3>
-  <ul>
-    <li><b>رصد الخلل بالذكاء الاصطناعي:</b> محرك تعلم آلي مدرب على رصد أنماط الاهتزاز غير الطبيعية (قوى الجاذبية الشاذة G-force) في السكة .</li>
-    <li><b>حسابات الأمان الفيزيائية:</b> معالجة فورية لحسابات التباطؤ، مسافة الكبح، وإجمالي زمن التوقف التام .</li>
-    <li><b>واجهة مستخدم ثنائية اللغة:</b> دعم كامل باللغتين العربية والإنجليزية لجميع القراءات والمؤشرات .</li>
-    <li><b>تحليلات بيانية حية:</b> رسوم بيانية ديناميكية مباشرة، وتحديثات مستمرة لحالة الإشارات والTelemetry .</li>
-  </ul>
+<h2>🛠️ Installation & Requirements</h2>
 
-  <h3>🛠️ التثبيت والمتطلبات</h3>
-  <p>لتشغيل هذه المحاكاة محلياً على جهازك، ستحتاج إلى إصدار <b>Python 3.9 أو أعلى</b>.</p>
+<p>Requires <b>Python 3.9+</b>.</p>
 
-  <h4>1. استنساخ المستودع (Clone)</h4>
-  <pre><code>git clone https://github.com/YOUR_USERNAME/rail-ai-safety-simulator.git
-cd rail-ai-safety-simulator</code></pre>
+<pre><code>git clone https://github.com/mun9uk-ship-it/rail-ai-safety-simulator.git
+cd rail-ai-safety-simulator
+pip install streamlit pandas numpy scikit-learn
+</code></pre>
 
-  <h4>2. تثبيت المكتبات المطلوبة</h4>
-  <p>قم بتثبيت الحزم اللازمة باستخدام pip:</p>
-  <pre><code>pip install streamlit pandas numpy scikit-learn</code></pre>
+<h2>🚀 How to Run</h2>
 
+<pre><code>streamlit run v01.py
+</code></pre>
 
+<p>This opens the simulator locally at <code>http://localhost:8501</code>.</p>
 
-  <h3>🚀 كيفية التشغيل</h3>
-  <p>قم بتشغيل التطبيق عبر الطرفية (Terminal) بتوجيه الأمر نحو ملف التشغيل:</p>
-  <pre><code>streamlit run v01.py</code></pre>
-  <p>بعد بدء الخادم المحلي، سيفتح المتصفح تلقائياً صفحة المحاكاة على الرابط <code>http://localhost:8501</code>.</p>
+<p>Or skip setup entirely and try the
+<a href="https://mun9uk-ship-it-rail-ai-safety-simulator-v01-yj0ycc.streamlit.app/">hosted version</a>.</p>
 
-  <h3>💡 دليل استخدام المحاكاة</h3>
-  <ol>
-    <li>اضغط على <b>▶️ Run Normal Simulation / تشغيل محاكاة طبيعية</b> لمتابعة حركة القطارات الآمنة تحت الظروف العادية .</li>
-    <li>اضغط على <b>⚠️ Simulate Track Fault (Watford) / محاكاة خلل السكة (واتفورد)</b> لتوليد اهتزازات شاذة وخطيرة على المسار ، وراقب كيف يكتشف الذكاء الاصطناعي الخطر ويفعّل كبح الطوارئ التلقائي .</li>
-    <li>اضغط على <b>🔄 Reset System / إعادة ضبط النظام</b> لمسح سجل المحاكاة الحالي وإعادة القطارات إلى وضعها الافتراضي .</li>
-  </ol>
-</div>
+<h2>💡 How to Use</h2>
+
+<ol>
+  <li>Click <b>▶️ Run Normal Simulation</b> to watch both trains operate safely under standard conditions</li>
+  <li>Click <b>⚠️ Simulate Track Fault (Watford)</b> to introduce a high-vibration anomaly and watch the AI detect it and trigger automatic emergency braking</li>
+  <li>Click <b>🔄 Reset System</b> to clear the run and return to default positions</li>
+</ol>
+
+<hr>
+
+<h2>🧠 How I built this</h2>
+
+<p>
+I have hands-on experience with rail ticketing, revenue protection, and
+an OPC train-driver aptitude certification, and I'm currently applying my
+AI/ML coursework (IBM AI Fundamentals, Machine Learning with Python) to
+transport-safety style problems. I used an AI coding assistant to help
+write and structure this app, and worked through the logic — the
+Isolation Forest model, the object-oriented <code>Train</code> class, and the
+braking-physics calculations — to make sure I understand exactly how and
+why it works.
+</p>
+
+<h2 dir="rtl">🧠 كيف بنيت هذا المشروع</h2>
+
+<p dir="rtl">
+لدي خبرة عملية في تذاكر السكك الحديدية وحماية الإيرادات، وشهادة اجتياز
+اختبار OPC لسائق قطار، وأطبّق حالياً ما تعلمته في دورات الذكاء
+الاصطناعي (IBM AI Fundamentals، تعلم الآلة ببايثون) على مسائل تشبه
+أمان النقل. استخدمت مساعد ذكاء اصطناعي في كتابة وهيكلة هذا التطبيق،
+وراجعت المنطق بالكامل — نموذج Isolation Forest، وكلاس <code>Train</code>،
+وحسابات فيزياء الكبح — للتأكد أنني أفهم تماماً كيف ولماذا يعمل.
+</p>
+
+<hr>
+
+<h2>⚠️ Limitations</h2>
+
+<ul>
+  <li>All telemetry (track vibration) is <b>simulated</b>, not real sensor data</li>
+  <li>This is a learning/portfolio project, not a certified or validated safety system</li>
+  <li>A real deployment would require real sensor integration, domain-expert validation, and formal safety-case testing</li>
+</ul>
